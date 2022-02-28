@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBWQRCodeScanner"
-  s.version      = "0.0.10"
+  s.version      = "0.0.13"
   s.summary      = "二维码扫描识别组件"
 
   # This description is used to generate tags and improve search results.
