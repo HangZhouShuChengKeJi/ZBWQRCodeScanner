@@ -1,0 +1,23 @@
+PODS:
+  - libqrencode (3.4.2)
+  - ZXingObjC (3.1.0):
+    - ZXingObjC/All (= 3.1.0)
+  - ZXingObjC/All (3.1.0)
+
+DEPENDENCIES:
+  - libqrencode (~> 3.4.2)
+  - ZXingObjC (~> 3.1.0)
+
+SPEC REPOS:
+  "git@106.14.57.231:/data/srv/Specs.git":
+    - ZXingObjC
+  https://github.com/cocoapods/specs.git:
+    - libqrencode
+
+SPEC CHECKSUMS:
+  libqrencode: 43dc34b89af83ea4b07c409cd8e09c87aa3a1c9f
+  ZXingObjC: b7bc081cd84105ccc95d38a95e2a231babc11f09
+
+PODFILE CHECKSUM: 5b1ba846e776e1634c60507f77120c4be8b85e28
+
+COCOAPODS: 1.5.2

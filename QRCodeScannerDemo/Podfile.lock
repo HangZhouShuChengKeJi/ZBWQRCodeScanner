@@ -1,0 +1,29 @@
+PODS:
+  - libqrencode (3.4.2)
+  - ZBWQRCodeScanner (0.0.1):
+    - libqrencode (~> 3.4.2)
+    - ZXingObjC (~> 3.1.0)
+  - ZXingObjC (3.1.0):
+    - ZXingObjC/All (= 3.1.0)
+  - ZXingObjC/All (3.1.0)
+
+DEPENDENCIES:
+  - ZBWQRCodeScanner (from `../QRCodeScanner/`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - libqrencode
+    - ZXingObjC
+
+EXTERNAL SOURCES:
+  ZBWQRCodeScanner:
+    :path: "../QRCodeScanner/"
+
+SPEC CHECKSUMS:
+  libqrencode: 43dc34b89af83ea4b07c409cd8e09c87aa3a1c9f
+  ZBWQRCodeScanner: 9002bf69dc54999beb789ab721949dadf7d7190b
+  ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
+
+PODFILE CHECKSUM: cca66ca60b9b419ee5a40d04a930ff7064d0c699
+
+COCOAPODS: 1.11.2
