@@ -10,7 +10,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import "QRCodeScannerUtility.h"
-#import <ZXBarcodeFormat.h>
+#import <ZXingObjC/ZXBarcodeFormat.h>
 
 #define QRCodeScannerView_Height_Scale (CGRectGetHeight([UIScreen mainScreen].bounds)/480)
 
