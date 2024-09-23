@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   s.license      = "BSD"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "11.0"
   s.author             = { "bwzhu" => "" }
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

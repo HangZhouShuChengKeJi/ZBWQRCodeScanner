@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   s.license      = "BSD"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "11.0"
   s.author             = { "bwzhu" => "" }
 
 
@@ -98,6 +98,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "ZXingObjC", ">= 3.6.9"
+  s.dependency "ZXingObjC", "~> 3.6.9"
 
 end

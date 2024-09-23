@@ -8,6 +8,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'QRCodeScanner' do
 
+# ZXingObjC  3.6.9 的版本 要求系统高于11
 pod 'ZXingObjC', '>= 3.6.9'
 pod 'libqrencode', '~> 3.4.2'
 
