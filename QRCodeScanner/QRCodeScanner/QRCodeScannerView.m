@@ -150,7 +150,7 @@ UIImage *imageInQRCodeScannerBundle(NSString *imageName)
 
 @interface QRCodeScannerView() <AVCaptureMetadataOutputObjectsDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (nonatomic) QRCScannerMaskView        *maskView;
+@property (nonatomic) QRCScannerMaskView        *scannerMaskView;
 @property (nonatomic) UILabel                   *tipStrLable;
 @property (nonatomic) UIButton                  *lightBtn;
 @property (nonatomic) UIButton                  *photoBtn;
@@ -295,7 +295,7 @@ static NSDictionary *typeString2IntMap = nil;
         [weakSelf.session startRunning];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [weakSelf.maskView startScannerAnimation];
+            [weakSelf.scannerMaskView startScannerAnimation];
             [weakSelf startTimer];
         });
     });
@@ -322,7 +322,7 @@ static NSDictionary *typeString2IntMap = nil;
         [weakSelf.session stopRunning];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [weakSelf.maskView pauseScannerAnimation];
+            [weakSelf.scannerMaskView pauseScannerAnimation];
             [weakSelf stopTimer];
         });
     });
@@ -415,7 +415,7 @@ static NSDictionary *typeString2IntMap = nil;
 
 - (void)initSubviews
 {
-    [self addSubview:self.maskView];
+    [self addSubview:self.scannerMaskView];
     
     [self addSubview:self.tipStrLable];
     if (self.delegate && [self.delegate respondsToSelector:@selector(scannerView:interfaceSetupForTipStrLabel:)]) {
@@ -706,18 +706,18 @@ static NSDictionary *typeString2IntMap = nil;
 
 #pragma mark - setter and getter
 
-- (UIView *)maskView
+- (UIView *)scannerMaskView
 {
-    if (!_maskView) {
-        _maskView = [[QRCScannerMaskView alloc] initWithFrame:self.bounds];
-        _maskView.backgroundColor = [UIColor clearColor];
-        _maskView.scannerRect = self.clearDrawRect;
-        _maskView.cornerLineColor = self.cornerLineColor ? : QRCodeScannerView_DefaultColor;
-        _maskView.lineType = self.lineType;
-        _maskView.indicatorImage = self.indicatorImage;
-        _maskView.indicatorLineColor = self.indicatorLineColor;
+    if (!_scannerMaskView) {
+        _scannerMaskView = [[QRCScannerMaskView alloc] initWithFrame:self.bounds];
+        _scannerMaskView.backgroundColor = [UIColor clearColor];
+        _scannerMaskView.scannerRect = self.clearDrawRect;
+        _scannerMaskView.cornerLineColor = self.cornerLineColor ? : QRCodeScannerView_DefaultColor;
+        _scannerMaskView.lineType = self.lineType;
+        _scannerMaskView.indicatorImage = self.indicatorImage;
+        _scannerMaskView.indicatorLineColor = self.indicatorLineColor;
     }
-    return _maskView;
+    return _scannerMaskView;
 }
 
 - (UILabel *)tipStrLable

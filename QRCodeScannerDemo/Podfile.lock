@@ -1,5 +1,5 @@
 PODS:
-  - ZBWQRCodeScanner (0.0.16):
+  - ZBWQRCodeScanner (0.0.15):
     - ZXingObjC (>= 3.6.9)
   - ZXingObjC (3.6.9):
     - ZXingObjC/All (= 3.6.9)
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
     :path: "../QRCodeScanner/"
 
 SPEC CHECKSUMS:
-  ZBWQRCodeScanner: 5a5cb52e06ddb730110982f9f8abecdd7ea00810
+  ZBWQRCodeScanner: fce26fa539f6bcd86d92084681fe35d623752e7c
   ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
 
 PODFILE CHECKSUM: cca66ca60b9b419ee5a40d04a930ff7064d0c699
